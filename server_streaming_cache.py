@@ -9,7 +9,7 @@ import cv2
 
 server_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 host_name  = socket.gethostname()
-host_ip = '192.168.50.192' # Enter the Drone IP address
+host_ip = '127.0.0.1' # Enter the Drone IP address
 print('HOST IP:',host_ip)
 port = 9999
 socket_address = (host_ip,port)
@@ -21,7 +21,7 @@ def start_video_stream():
 	client_socket,addr = server_socket.accept()
 	camera = True
 	if camera == True:
-		vid = cv2.VideoCapture(0)
+		vid = cv2.VideoCapture(2)
 	else:
 		vid = cv2.VideoCapture('videos/boat.mp4')
 	try:

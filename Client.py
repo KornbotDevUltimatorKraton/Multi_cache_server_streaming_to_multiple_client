@@ -9,7 +9,7 @@ import struct
 
 # create socket
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-host_ip = '127.0.0.1'  # Here Require CACHE Server IP
+host_ip = '127.0.0.7'  # Here Require CACHE Server IP
 port = 9999
 client_socket.connect((host_ip, port))  # a tuple
 data = b""

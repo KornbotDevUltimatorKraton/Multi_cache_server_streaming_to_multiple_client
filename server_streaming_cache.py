@@ -1,7 +1,3 @@
-# This code will run the drone side, it will send video to cache server
-# Lets import the libraries
-# Welcome to PyShine
-# www.pyshine.com
 import socket, cv2, pickle, struct
 import imutils
 import cv2

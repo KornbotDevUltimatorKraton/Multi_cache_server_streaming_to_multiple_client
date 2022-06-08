@@ -1,7 +1,3 @@
-# Welcome to PyShine
-# lets make the client code
-# Welcome to PyShine
-# www.pyshine.com
 import socket
 import cv2
 import pickle
